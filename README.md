@@ -6,9 +6,9 @@
 
 ---
 
-## 🖼️ 入出力サンプル（デモアプリ）
+## 🖼️ デモ
 
-実際に動作するサンプルはこちらからアクセスできます。
+実際に動作するwebアプリはこちらからアクセスできます。
 
  [Remove Shadow App (デモリンク)](https://remove-shadow-app-1073918449956.asia-northeast1.run.app/)
 
