@@ -25,7 +25,7 @@
 ---
 
 ## 🛠️ 使用技術
-- Python 3.10
+- Python 3.9
 - FastAPI
 - Uvicorn
 - PyTorch
