@@ -3,6 +3,8 @@
 このプロジェクトは、**FastAPI** を使ったWebアプリケーションで、**CycleGANモデル**による画像変換（例：顔写真の影除去）をHTTP API経由で実行できます。
 
 **Docker** 対応で、**Google Cloud Run** へのデプロイも簡単にできる設計になっています。
+## 入出力例
+<img src="./sanple.JPG" width="400">
 
 ---
 
