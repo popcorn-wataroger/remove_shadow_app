@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pillow
+google-cloud-storage
+torch
+torchvision
+tensorboard
+jinja2
+memory_profiler
+python-multipart
