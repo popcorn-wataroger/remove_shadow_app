@@ -13,10 +13,10 @@
  [Remove Shadow App (デモリンク)](https://remove-shadow-app-1073918449956.asia-northeast1.run.app/)
 
 - ※無料枠のため、コールドスタート
-- ※友人の顔専用モデルを公開しているため、data/friend/testB/img_husuband_7467.jpgをご使用ください。
+- ※友人の顔専用モデルを公開しているため、test_dataをご使用ください。
 
 ### 入出力イメージ
-<img src="./sanple.JPG" width="400">
+<img src="./figure/sanple.JPG" width="400">
 
 ---
 
@@ -39,7 +39,10 @@
 - Google Cloud Run
 
 ---
+## 🏗️ アーキテクチャ概要図
+![GCP Architecture](./figure/GCP_architecture.png)
 
+---
 ## 🚀 セットアップ手順
 
 ### 1. リポジトリをクローン
@@ -100,11 +103,21 @@ curl -X POST "http://localhost:8080/convert-a2b/" \
 ---
 
 ## ☁️ Google Cloud Runへのデプロイ手順（オプション）
-### 1. Google Cloud Buildでビルド
+### 1. デプロイ前提条件
+本プロジェクトをGoogle Cloud Runにデプロイするためには、以下の準備が必要です。
+
+- **GCPアカウント作成**（およびプロジェクト作成）
+- **GCS（Google Cloud Storage）バケット作成**
+  - 変換前後の画像を保存するために使用します
+- **Google Cloud SDKのインストール**
+  - ローカルからGCPの各種サービス（Cloud Build、Cloud Runなど）へコマンドライン操作できるようにします
+  - [SDK公式インストールガイド](https://cloud.google.com/sdk/docs/install)
+
+### 2. Google Cloud Buildでビルド
 ```bash
 gcloud builds submit --tag gcr.io/<YOUR_PROJECT_ID>/cyclegan-api
 ```
-### 2. Cloud Runにデプロイ
+### 3. Cloud Runにデプロイ
 ```bash
 gcloud run deploy cyclegan-api \
   --image gcr.io/<YOUR_PROJECT_ID>/cyclegan-api \
