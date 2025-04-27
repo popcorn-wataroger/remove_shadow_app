@@ -13,7 +13,7 @@
  [Remove Shadow App (デモリンク)](https://remove-shadow-app-1073918449956.asia-northeast1.run.app/)
 
 - ※無料枠のため、コールドスタート
-- ※友人の顔専用モデルを公開しているため、
+- ※友人の顔専用モデルを公開しているため、data/friend/testB/img_husuband_7467.jpgをご使用ください。
 
 ### 入出力イメージ
 <img src="./sanple.JPG" width="400">
