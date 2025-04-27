@@ -1,9 +1,21 @@
-# CycleGANベースの影除去API
+# CycleGANベースの影除去AIアプリ（GCPデプロイ）
 
 このプロジェクトは、**FastAPI** を使ったWebアプリケーションで、**CycleGANモデル**による画像変換（例：顔写真の影除去）をHTTP API経由で実行できます。
 
 **Docker** 対応で、**Google Cloud Run** へのデプロイも簡単にできる設計になっています。
-## 入出力例
+
+---
+
+## 🖼️ 入出力サンプル（デモアプリ）
+
+実際に動作するサンプルはこちらからアクセスできます。
+
+ [Remove Shadow App (デモリンク)](https://remove-shadow-app-1073918449956.asia-northeast1.run.app/)
+
+- ※無料枠のため、コールドスタート
+- ※友人の顔専用モデルを公開しているため、
+
+### 入出力イメージ
 <img src="./sanple.JPG" width="400">
 
 ---
