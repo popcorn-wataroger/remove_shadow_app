@@ -28,19 +28,13 @@
 
 ---
 
-## 📦 プロジェクト構成
-
-my-cyclegan-app/ ├── app/ │ ├── main.py # FastAPIエントリーポイント │ ├── shadow_removal.py # CycleGAN推論関数 │ ├── model.py # Generator / Discriminator定義 │ ├── utils.py # 補助的な関数 │ └── models/ # 学習済みモデル（.pthファイル） ├── requirements.txt # Python依存ライブラリ ├── Dockerfile # Dockerビルド用ファイル └── README.md # 本ドキュメント
-
----
-
 ## 🚀 セットアップ手順
 
 ### 1. リポジトリをクローン
 
 ```bash
 git clone https://github.com/popcorn-wataroger/remove_shadow_app.git
-cd my-cyclegan-app
+cd remove_shadow_app
 ```
 ### 2. Dockerイメージをビルド
 ```bash
@@ -58,7 +52,7 @@ docker run -p 8080:8080 cyclegan-api
 ```
 POST /convert-a2b/
 ```
-アップロードされた画像を、CycleGANモデルで影除去変換し、**変換後の画像（PNG）**を返します。
+アップロードされた画像を、CycleGANモデルで影除去変換し、変換後の画像（PNG）を返します。
 
 ### 🔹 リクエスト仕様
 
