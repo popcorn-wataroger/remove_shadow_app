@@ -39,7 +39,7 @@ my-cyclegan-app/ ├── app/ │ ├── main.py # FastAPIエントリー�
 ### 1. リポジトリをクローン
 
 ```bash
-git clone https://github.com/あなたのGitHubアカウント/my-cyclegan-app.git
+git clone https://github.com/popcorn-wataroger/remove_shadow_app.git
 cd my-cyclegan-app
 ```
 ### 2. Dockerイメージをビルド
