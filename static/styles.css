@@ -1,0 +1,115 @@
+body {
+    font-family: 'Roboto', sans-serif; /* モダンなフォントを使用 */
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f; /* ダークな背景色 */
+    color: #e0e0e0; /* 明るい文字色 */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #2c2c3e; /* ダークグレーの背景 */
+    border-radius: 12px; /* 角を丸める */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 立体感を追加 */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* 白い文字色 */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between; /* 左右に配置 */
+    align-items: flex-start; /* 上端を揃える */
+    gap: 20px; /* 左右の画像間のスペース */
+    margin-top: 20px;
+}
+
+.image-box {
+    flex: 1; /* 左右の画像を均等に配置 */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* 縦方向に配置 */
+    align-items: center; /* 中央揃え */
+    justify-content: flex-start; /* 上端を揃える */
+}
+
+.image-preview,
+.placeholder {
+    width: 100%; /* 親要素（.image-box）の幅に合わせる */
+    height: 300px; /* 固定の高さを設定 */
+    border: 1px solid #444; /* ダークな枠線 */
+    border-radius: 8px; /* 角を丸める */
+    object-fit: contain; /* アスペクト比を維持しつつ親要素に収める */
+    background-color: #3a3a4f; /* ダークな背景色 */
+    margin: 0; /* 余白をリセット */
+    padding: 0; /* パディングをリセット */
+    box-sizing: border-box; /* ボーダーを含めたサイズ計算 */
+}
+
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888; /* プレースホルダーの文字色 */
+    font-size: 16px;
+    font-style: italic;
+    border: 1px dashed #555; /* ダークな破線 */
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4caf50; /* 落ち着いた緑色 */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* ホバー時のアニメーション */
+}
+
+.btn:hover {
+    background-color: #45a049; /* ホバー時の色 */
+}
+
+.btn-clear {
+    background-color: #f44336; /* 落ち着いた赤色 */
+    margin-left: 10px; /* 隣のボタンとの間隔 */
+    transition: background-color 0.3s ease; /* ホバー時のアニメーション */
+}
+
+.btn-clear:hover {
+    background-color: #d32f2f; /* ホバー時の色 */
+}
+
+.btn:disabled {
+    background-color: #555; /* 無効化時の色 */
+    cursor: not-allowed;
+}
+
+.btn:hover:enabled {
+    background-color: #45a049; /* 有効時のホバー色 */
+}
+
+.message {
+    margin-top: 10px;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+/* モバイル対応: 縦並びにする */
+@media (max-width: 768px) {
+    .button-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
